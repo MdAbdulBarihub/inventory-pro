@@ -1,0 +1,192 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background: #717db1;
+}
+
+header {
+  background: #1d315a;
+  color: white;
+  padding: 20px;
+  text-align: center;
+}
+
+main {
+  padding: 20px;
+}
+
+.cart-list {
+  background: rgb(162, 196, 241);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.user-details input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#confirm-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+#clear-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.success-message {
+  color: #2e7d32;
+  background-color: #c8e6c9;
+  padding: 10px;
+  border: 1px solid #81c784;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#receipt-container {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #856404;
+  font-size: 16px;
+
+
+
+}
+
+main {
+  padding: 20px;
+}
+
+.cart-list {
+  background: rgb(178, 233, 243);
+  padding: 10px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+.cart-item {
+  margin: 10px 0;
+  padding: 10px;
+  border-bottom: 1px solid #ddd;
+}
+
+.summary {
+  font-size: 18px;
+  margin-bottom: 20px;
+}
+
+.user-details input {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.cart-buttons {
+  display: flex;
+  gap: 10px;
+}
+
+button {
+  padding: 10px 15px;
+  font-size: 16px;
+  cursor: pointer;
+  border: none;
+  border-radius: 5px;
+}
+
+#confirm-btn {
+  background-color: #3498db;
+  color: white;
+}
+
+#clear-btn {
+  background-color: #e74c3c;
+  color: white;
+}
+
+.success-message {
+  color: #2e7d32;
+  background-color: #c8e6c9;
+  padding: 10px;
+  border: 1px solid #81c784;
+  border-radius: 8px;
+  margin: 10px 0;
+  text-align: center;
+  font-weight: bold;
+}
+
+#receipt-container {
+  background-color: #fff3cd;
+  border: 1px solid #ffeeba;
+  padding: 15px;
+  border-radius: 8px;
+  margin-top: 20px;
+  color: #000000;
+  font-size: 16px;
+}
+.top-navbar {
+  background-color:  #1a2c50;
+  padding: 25px 0;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+}
+
+.nav-links {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 40px;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #fffbfb;
+  font-weight: bold;
+  font-size: 20px;
+  transition: color 0.2s ease;
+}
+
+.nav-links li a:hover {
+  color: #007BFF;
+}

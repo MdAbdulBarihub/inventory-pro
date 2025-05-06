@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Our Products</title>
+  <link rel="stylesheet" href="products.css">
+</head>
+<body>
+  <nav class="top-navbar">
+    <ul class="nav-links">
+      <li><a href="main.html">Home</a></li>
+      <li><a href="products.html">Product</a></li>
+      <li><a href="cart.html">Cart</a></li>
+      <li><a href="index.html">Sign Up</a></li>
+      <li><a href="sales.html">sale report</a></li>
+      <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+  </nav>
+  <header>
+    <h1>Explore Our Latest Products</h1>
+    <p>Browse through our top 35 products and add them to your cart.</p>
+  </header>
+
+  <main>
+    <div id="productsContainer" class="products-grid"></div>
+
+    <div id="summary">
+      <p>Total Items: <span id="totalQty">0</span></p>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+    </div>
+
+    <div id="successMessage" class="success-message"></div>
+  </main>
+  <div id="product-container"></div>
+
+  <script src="products.js"></script>
+</body>
+</html>

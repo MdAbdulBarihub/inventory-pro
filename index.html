@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Login Page</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body onload="generateCode()">
+  <div class="container">
+    <div class="left-panel">
+      <div class="welcome-text">
+        <h1>WELCOME TO</h1>
+        <h1><span class="highlight">Inventory</span> Management System</h1>
+      </div>
+      <p>"Please login with your name and password. Then verify the code to continue."</p>
+    </div>
+    <div class="right-panel">
+      <h2>Sign In</h2>
+      <input type="text" id="username" placeholder="Enter your name" />
+      <div class="password-container">
+        <input type="password" id="password" placeholder="Enter your password" />
+        <span id="togglePassword" onclick="togglePassword()">👁</span>
+      </div>
+      <input type="text" id="codeInput" placeholder="Enter the code shown below" />
+      <div class="code-refresh">
+        <span id="codeDisplay"></span>
+        <button onclick="generateCode()">Refresh Code</button>
+      </div>
+      <div id="message"></div>
+      <button onclick="checkCode()">Sign In</button>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Sales Report</title>
+  <link rel="stylesheet" href="sales report.css">
+  <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+  <nav class="navbar">
+    <div class="nav-left">InventoryPro</div>
+    <div class="nav-right">
+      <a href="main.html">Home</a>
+      <a href="products.html">Products</a>
+      <a href="cart.html">Cart</a>
+      <a href="aboutus.html">About</a>
+      <a href="contact.html">Contact</a>
+      <a href="index.html">Sign Up</a>
+    </div>
+  </nav>
+
+  <h1>Sales Report</h1>
+  <h2>Last 2 Months (March & April)</h2>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Product</th>
+        <th>Units Sold</th>
+        <th>Total Revenue (INR)</th>
+        <th>Month</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr><td>Processor (CPU)</td><td>10</td><td>68000</td><td>March</td></tr>
+      <tr><td>Graphics Card</td><td>5</td><td>47500</td><td>March</td></tr>
+      <tr><td>RAM 8GB</td><td>12</td><td>33600</td><td>March</td></tr>
+      <tr><td>Motherboard</td><td>7</td><td>31500</td><td>April</td></tr>
+      <tr><td>SSD 256GB</td><td>9</td><td>28800</td><td>April</td></tr>
+      <tr><td>Monitor</td><td>4</td><td>24800</td><td>April</td></tr>
+    </tbody>
+  </table>
+
+  <div class="chart-container">
+    <canvas id="salesChart"></canvas>
+  </div>
+
+  <script>
+    const ctx = document.getElementById('salesChart').getContext('2d');
+    new Chart(ctx, {
+      type: 'bar',
+      data: {
+        labels: ['March', 'April'],
+        datasets: [{
+          label: 'Total Revenue (INR)',
+          data: [149100, 85100],
+          backgroundColor: ['#00bcd4', '#8bc34a']
+        }]
+      },
+      options: {
+        responsive: true,
+        scales: {
+          y: {
+            beginAtZero: true
+          }
+        }
+      }
+    });
+  </script>
+</body>
+</html>

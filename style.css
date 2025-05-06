@@ -1,0 +1,117 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: linear-gradient(135deg, #0f2027, #2c5364); /* dark blue + gray mix */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+  
+  .container {
+    display: flex;
+    width: 900px;
+    height: 500px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  }
+  
+  .left-panel {
+    flex: 1;
+    color: white;
+    background: linear-gradient(to bottom right, #0072ff, #00c6ff);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+    position: relative;
+    overflow: hidden;
+  }
+  
+  .left-panel::before, .left-panel::after {
+    content: "";
+    position: absolute;
+    border-radius: 50%;
+    background: rgba(224, 14, 77, 0.1);
+  }
+  
+  .left-panel::before {
+    width: 200px;
+    height: 200px;
+    bottom: -50px;
+    left: -50px;
+  }
+  
+  .left-panel::after {
+    width: 150px;
+    height: 150px;
+    top: -30px;
+    right: -30px;
+  }
+  
+  .highlight {
+    color: orange;
+  }
+  
+  .right-panel {
+    flex: 1;
+    background: white;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+  }
+  
+  input {
+    padding: 10px;
+    margin: 10px 0;
+    font-size: 16px;
+    width: 100%;
+  }
+  
+  .password-container {
+    position: relative;
+  }
+  
+  .password-container span {
+    position: absolute;
+    right: 10px;
+    top: 50%;
+    transform: translateY(-50%);
+    cursor: pointer;
+  }
+  
+  .code-refresh {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+  }
+  
+  button {
+    padding: 10px;
+    background-color: #0072ff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
+  #message {
+    margin-top: 10px;
+    font-weight: bold;
+  }
+  body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: radial-gradient(circle at top left, #1e3c72, #2a5298, #3b3b3b); /* richer blue-gray mix */
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }

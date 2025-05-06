@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Inventory Management System</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+<body>
+
+  <div class="top-section">
+    <div class="top-overlay">
+      <button class="menu-toggle" onclick="toggleMenu()">☰</button>
+      <div class="header-options">
+       <a href="index.html">login</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <h1>Inventory Management System</h1>
+    </div>
+  </div>
+
+  <div class="side-menu" id="sideMenu">
+    <a href="index.html">Sign up</a>
+    <a href="products.html">Categories</a>
+    <a href="sales.html">Sales</a>
+    <a href="cart.html">Cart</a>
+    <a href="aboutus.html">About us</a>
+    <a href="contact.html">Contact us</a>
+  </div>
+<br>
+ <section class="products-container">
+  <h1>"Welcome to our Inventory Management System! Looking for something? Just use the search bar to find what you need."</h1>
+  <div class="search-container">
+    <input type="text" id="search-input" placeholder="Search products..." />
+    <button id="search-btn">
+      <img src="https://img.icons8.com/ios-glyphs/30/000000/search--v1.png" alt="Search" />
+    </button>
+  </div>
+  <section class="news-section">
+    <h1>"For the latest news and updates, follow the links below"</h1>
+    <ul>
+      <li><a href="https://www.tomshardware.com/" target="_blank">1) Latest Tech News</a></li>
+      <li><a href="https://www.pcworld.com/article/2144388/the-best-pc-hardware-and-software-of-2023-2024.html" target="_blank">2) PC and Laptop Hardware</a></li>
+      <li><a href="https://www.intel.com/content/www/us/en/gaming/resources/how-to-build-a-gaming-pc.html" target="_blank">3) PC Setup Tutorial</a></li>
+    </ul>
+  </section>
+
+  <section class="products-container">
+    <h2>Our Popular Products:-</h2>
+    <div id="products" class="products"></div>
+
+    <div class="cart-summary">
+      <p>Total Quantity: <span id="totalQty">0</span></p>
+      <p>Total Price: ₹<span id="totalPrice">0</span></p>
+    </div>
+  </section>
+  <section class="about-us-section">
+    <h2>About Us</h2>
+    <div class="about-cards">
+      <div class="about-card">
+        <h3>Md Abdul Bari <br>
+          (Founder & Lead Developer)</h3>
+        <p>Md Abdul Bari is the visionary founder of InventoryPro. With a strong background in software development, Aiman drives the company's technological advancements, ensuring our solutions stay ahead of the curve.</p>
+      </div>
+      <div class="about-card">
+        <h3>Ashraf Ali <br> (operation director)</h3>
+        <p>Ashraf Ali  oversees the operational aspects of InventoryPro. His expertise in process optimization and team management enables us to deliver high-quality services efficiently..</p>
+      </div>
+      <div class="about-card">
+        <h3> Syed Aiman Osman<br> (community manager)</h3>
+        <p>Syed Aiman Osman is the face of our community engagement. He fosters strong relationships with our users, ensuring their voices are heard and their needs are met. Abdul's dedication helps us build a loyal community around our products..</p>
+      </div>
+    </div>
+  </section>
+  <div class="footer-section">
+    <div class="logo-box">
+      <img src="mainlogo.jpg" class="center-image" alt="Logo">
+    </div>
+  
+    <div class="mission-text">
+      <h3 style="color:#00ffff;">Our Mission</h3>
+      <p>We aim to revolutionize how individuals and businesses manage their PC hardware needs. Whether you're building your dream setup or upgrading a component, our mission is to make the process fast, easy, and affordable</p>
+    </div>
+  
+    <div class="shop-categories">SHOP CATEGORIES</div>
+    <div class="shop-links">
+      <br>
+      <a href="">Laptop Componenst</a>
+      <a href="">PC Components</a>
+      <a href="">Pc buildup</a>
+    </div>
+  
+    <div class="why-choose-us">
+      <h3 style="color: #00ffff;">Why Choose Us?</h3>
+      <ul>
+        <li>Expert-built Custom PCs</li>
+        <br>
+        <li>Fast & Safe Delivery in 5 Days</li>
+        <br>
+        <li>Affordable & Flexible Pricing</li>
+        <br>
+        <li>Trusted by 1000+ Customers</li>
+        <br>        
+<li>24/7 Customer Support</li>
+      </ul>
+    </div>
+  </div>
+  </footer>
+
+  <footer class="bottom-footer">
+    <div class="footer-content">
+      <div class="footer-contact">
+        <h3>Contact Us</h3>
+        <p>Email: support@proinventory6.com</p>
+        <p>Phone: +91-8125940875</p>
+        <p>Address: Hyderabad, India</p>
+      </div>
+
+      <div class="footer-links">
+        <h3>Quick Links</h3>
+        <ul>
+          <li><span class="dot"></span> Home</li>
+          <li><span class="dot"></span> Products</li>
+          <li><span class="dot"></span> Categories</li>
+          <li><span class="dot"></span> Sales</li>
+          <li><span class="dot"></span> About Us</li>
+        </ul>
+      </div>
+      <div class="footer-feedback">
+        <h3>Feedback</h3>
+        <form id="footer-feedback-form">
+          <input type="text" placeholder="Your Name" required />
+          <input type="email" placeholder="Your Email" required />
+          <textarea placeholder="Your Feedback" rows="4" required></textarea>
+          <button type="submit">Submit</button>
+        </form>
+      </div>
+    </div>
+
+    <div class="footer-social">
+      <p>Follow us:</p>
+      <div class="social-icons">
+        <i class="fab fa-facebook-f"></i>
+        <i class="fab fa-twitter"></i>
+        <i class="fab fa-instagram"></i>
+      </div>
+    </div>
+
+    <div class="footer-bottom">
+      &copy; 2025 Inventory System. All rights reserved and documents.
+    </div>
+  </footer>
+
+  <script src="main.js"></script>
+</body>
+</html>

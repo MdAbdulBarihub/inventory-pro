@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Contact Us - BuildIt Inventory</title>
+  <link rel="stylesheet" href="contact.css" />
+</head>
+<body>
+  <nav class="top-nav">
+    <a href="main.html">Home</a>
+    <a href="products.html">Products</a>
+    <a href="cart.html">Cart</a>
+    <a href="aboutus.html">About Us</a>
+    <a href="index.html">sign up</a>
+    <a href="contact.html" class="active">Contact</a>
+  </nav>
+
+  <div class="contact-container">
+    <h2>Contact Us</h2>
+    <form id="messageForm">
+      <div class="row">
+        <input type="text" name="firstName" placeholder="First Name *" required />
+        <input type="text" name="lastName" placeholder="Last Name *" required />
+      </div>
+      <div class="row">
+        <input type="tel" name="phone" placeholder="Mobile No *" required />
+        <input type="email" name="email" placeholder="Email ID *" required />
+      </div>
+      <textarea name="message" rows="4" placeholder="Message" required></textarea>
+
+      <label for="captcha">Please type the characters *</label>
+      <div class="row">
+        <div id="captcha-box" class="captcha-display"></div>
+        <input type="text" id="captcha-input" placeholder="Enter characters shown" required />
+      </div>
+      <p class="captcha-note">This helps us prevent spam, thank you.</p>
+
+      <button type="submit">Submit</button>
+      <p id="form-response"></p>
+    </form>
+  </div>
+
+  <script src="contact.js"></script>
+</body>
+</html>
